@@ -79,6 +79,7 @@ class SelfList {
                 temp = temp->next;
             }
             if(found) {
+                // Está bueno separarlo en métodos, pero deberían ser privados
                 switch (this->method)
                 {
                     case Move:
@@ -127,6 +128,7 @@ class SelfList {
                 throw std::exception();
         }
 
+        // t no es un buen nombre :)
         void  _Move(Node<T>* t)
         {
             if(t->prev!=nullptr)

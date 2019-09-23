@@ -34,6 +34,7 @@ class TraitsList {
             Node<T>** chunte;
             if(!this->find(data,chunte))
             {
+                // Si ya tienes la ubicación en chute (después del find), ya no es necesaria todo esta lógica
                 if(size()!=0)
                 {
                     auto temp = this->head;
@@ -85,6 +86,7 @@ class TraitsList {
             Node<T>** chunte;
             if(find(data,chunte))
             {
+                // Lo mismo que el caso del insert
                 if((*chunte)==(this->head))
                 {
                     auto aux = this->head;
